@@ -1,26 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Resources from w3schools.com and getbootstrap.com were used to help make this website -->
 
 <head>
-    <h1 class="display-4">Michelle Domagala-Tang</h1>
+    <title>Personal Website</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .navbar{
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+        .responsive {
+            width: 30%;
+            height: auto;
+        }
+
+        .jumbotron{
+            background-image: url("images/Background1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        footer{
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+    </style>
 </head>
 
-<!-- Let Bootstrap automatically handle the layout
-For example, create three equal-width columns on all devices/screen widths -->
-<div class="row">
-    <!-- Text-Responsiveness(sm,md,lg,xl)-Number(equals 12 for each row)-->
-    <div class="col-sm-3">Here</div>
-    <div class="col-sm-3">are</div>
-    <div class="col-sm-3">four equal</div>
-    <div class="col-sm-3">colums</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#" ></a>
+    <button class = "navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">About me</a>
+            </li>
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Projects and Teams
+                    </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class = "dropdown-item" href="#">Personal Projects</a>
+                    <a class="dropdown-item" href="#">Hackathons</a>
+                    <a class="dropdown-item" href="#">Sumobots</a>
+                    <a class="dropdown-item" href="#">Athletics</a>
+                </div>
+            </li>
+            <li class="nav-item active">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+        </ul>
+    </div>
+
+</nav>
+
+<div class="jumbotron">
+    <div class ="container text-center">
+            <h1 class="display-4" style="padding-top: 25px; padding-bottom: 10px">Hi! I'm Michelle Domagala-Tang</h1>
+            <h4>An engineering student passionate about new technology and entrepreneurship </h4>
+        <br>
+        <img src=images/Michelle.1.jpg s="img-fluid" alt="Michelle.1" class="responsive">
+    </div>
 </div>
 
+<div class="cpntainer-fluid bg-3 text-center">
+    <h3>About Me</h3><br>
+</div>
+
+<!--
 <div class="row">
     <div class="col-sm-4">Here are two</div>
     <div class="col-sm-8">uneven columns</div>
@@ -37,5 +96,5 @@ For example, create three equal-width columns on all devices/screen widths -->
         <p>Welcome to my website!</p>
     </div>
 </body>
-
+-->
 </html>
