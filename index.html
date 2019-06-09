@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -92,12 +93,18 @@ $(document).ready(function(){
                 <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item active">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item active">
                 <a class="nav-link" href="#contact">Contact</a>
             </li>
+            
         </ul>
+        
     </div>
 
 </nav>
+
 
 <!-- Title and Jumbotron -->
 <div class="jumbotron">
@@ -113,8 +120,8 @@ $(document).ready(function(){
 <!-- About Me -->
 <div class="container-fluid text-center" id="about">
     <h2 style="font-family: Playfair; font-size:40px" >About Me</h2><br>
-    <p>I am pursuing a degree in McMaster's combined Software Engineering and Business Management program. </p>
-    <p>In my free time I enjoy programming, reading, video games, and building projects! </p>
+    <p data-aos="fade-up">I am pursuing a degree in McMaster's combined Software Engineering and Business Management program. </p>
+    <p data-aos="fade-up">In my free time I enjoy programming, reading, video games, and building projects! </p>
     <br>
     <hr>
 </div>
@@ -123,13 +130,14 @@ $(document).ready(function(){
 <div class="container-fluid text-center">
     <h2 style="font-family: Playfair; font-size:40px"  id="projects">Projects</h2>
     <br>
-    <div class="row">
+    
+    <div class="row" data-aos="fade-up" data-aos-duration="2000">
         <div class="col-sm-4">
-            <div class="panel panel-default text-center">
+            <a href="https://github.com/MichelleDomagala-Tang/Web-Blocker"><div class="panel panel-default text-center">
                 <div class="panel-heading" style="background-color:rgb(190, 238, 255)">
                     <span class="glyphicon glyphicon-user logo"></span>
                     <h4><strong>WEB-BLOCKER</strong></h4>
-                </div>
+                </div></a>
                 <div class="panel-body">
                     <p>An application written in python that limits accessible websites specified by the client.</p>
                 </div>
@@ -137,10 +145,10 @@ $(document).ready(function(){
         </div>
         <div class="col-sm-4">
             <div class="panel panel-default text-center">
-                <div class="panel-heading" style="background-color:rgb(190, 238, 255)">
+                <a href="https://devpost.com/software/mac-pump-portal-j2ycn3"><div class="panel-heading" style="background-color:rgb(190, 238, 255)" >
                     <span class="glyphicon glyphicon-heart logo"></span>
                     <h4><strong>MACPUMP PORTAL</strong></h4>
-                </div>
+                </div></a>
                 <div class="panel-body">
                     <p>A website developed to increase patient-doctor communication. </p>
                 </div>
@@ -148,15 +156,23 @@ $(document).ready(function(){
         </div>
         <div class="col-sm-4">
             <div class="panel panel-default text-center">
-                <div class="panel-heading" style="background-color:rgb(190, 238, 255)">
+                <a href="https://www.linkedin.com/in/michelle-domagala-tang/"><div class="panel-heading" style="background-color:rgb(190, 238, 255)">
                     <span class="glyphicon glyphicon-wrench logo"></span>
                     <h4><strong>SUMOBOTS</strong></h4>
-                </div>
+                </div></a>
                 <div class="panel-body">
                     <p>Developed software and chassis of sumo-fighting robot using Adrino and AutoDesk Inventor.</p>
                 </div>
             </div>
         </div>
+    </div>
+    <hr>
+
+    <div class="container-fluid text-center" id="skills">
+        <h2 style="font-family: Playfair; font-size:40px" >Skills</h2><br>
+        <p data-aos="fade-up"> Proficient in Python and HTML, with experience in Javascript. </p>
+        <br>
+        <hr>
     </div>
 
     <footer class="container-fluid text-center" >
@@ -170,4 +186,11 @@ $(document).ready(function(){
         <p style="font-size:15px"><span class="glyphicon glyphicon-map-marker" ></span> Toronto, Canada</p>
         <p style="font-size:15px"><span class="glyphicon glyphicon-envelope"></span> domagalm@mcmaster.ca</p>
     </footer>
-    
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
