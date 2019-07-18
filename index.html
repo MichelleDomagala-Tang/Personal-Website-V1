@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
     <style>
         .navbar {
             margin-bottom: 0;
@@ -21,8 +23,8 @@
             letter-spacing: 4px;
         }
 
-        .navbar-nav > li{
-            padding-right:20px;
+        .navbar-nav>li {
+            padding-right: 20px;
         }
 
         .responsive {
@@ -42,7 +44,7 @@
         }
 
         .logo {
-            color:rgb(252, 170, 98);
+            color: rgb(252, 170, 98);
             font-size: 50px;
         }
 
@@ -55,56 +57,60 @@
 
 <!--jQuery to add smooth scrolling-->
 <script>
-$(document).ready(function(){
-    //Smooth scrolling to all links in navbar
-    $(".navbar a).on('click',function(event){
-        if (this.hash !==""){
-            event.preventDefault();
-            var hash = this.hash;
-        
-        //Implement smooth scrolling
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 900, function(){
-            window.location.hash=hash;
-        });
-        }
+    $(document).ready(function () {
+        //Smooth scrolling to all links in navbar
+        $(".navbar a).on('click',function(event){
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+
+                //Implement smooth scrolling
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function () {
+                    window.location.hash = hash;
+                });
+            }
+        })
     })
-})
 </script>
 
-<!-- Navigation Bar-->
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<!--- Navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+   <!-- LOGO <a class="navbar-brand" style="font-family:Segoe; font-weight: 800; font-size: 230%; " >MDT</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#top">Home<span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="fa fa-linkedin-square" style="font-size:250%" href="https://www.linkedin.com/in/michelle-domagala-tang/"></a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#about">About Me</a>
+            <li class="nav-item">
+                <a class="fa fa-github" style="font-size: 250%" href="https://github.com/MichelleDomagala-Tang"></a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#projects">Projects</a>
+            <li class="nav-item">
+                <a class="glyphicon glyphicon-pencil" style="font-size: 150%;color:rgb(0,119,181); margin-right:10px;" href="https://drive.google.com/file/d/1hDg7osbKjVLNN_bH0QR3VHcaz6Tqa9Pe/view?usp=sharing">Resume </a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            
-        </ul>
+                <li class="nav-item active">
+                        <a class="nav-link" href="#top">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
         
+        </ul>        
     </div>
-
 </nav>
-
 
 <!-- Title and Jumbotron -->
 <div class="jumbotron">
@@ -119,8 +125,9 @@ $(document).ready(function(){
 
 <!-- About Me -->
 <div class="container-fluid text-center" id="about">
-    <h2 style="font-family: Playfair; font-size:40px" >About Me</h2><br>
-    <p data-aos="fade-up">I am pursuing a degree in McMaster's combined Software Engineering and Business Management program. </p>
+    <h2 style="font-family: Playfair; font-size:40px">About Me</h2><br>
+    <p data-aos="fade-up">I am pursuing a degree in McMaster's combined Software Engineering and Business Management
+        program. </p>
     <p data-aos="fade-up">In my free time I enjoy programming, reading, video games, and building projects! </p>
     <br>
     <hr>
@@ -128,69 +135,129 @@ $(document).ready(function(){
 
 <!--Projects-->
 <div class="container-fluid text-center">
-    <h2 style="font-family: Playfair; font-size:40px"  id="projects">Projects</h2>
+    <h2 style="font-family: Playfair; font-size:40px" id="projects">Projects</h2>
     <br>
-    
+    <p>Some of my favourite projects the past few years</p>
+    <br>
+
     <div class="row" data-aos="fade-up" data-aos-duration="2000">
         <div class="col-sm-4">
-            <a href="https://github.com/MichelleDomagala-Tang/Web-Blocker"><div class="panel panel-default text-center">
-                <div class="panel-heading" style="background-color:rgb(190, 238, 255)">
-                    <span class="glyphicon glyphicon-user logo"></span>
-                    <h4><strong>WEB-BLOCKER</strong></h4>
-                </div></a>
-                <div class="panel-body">
-                    <p>An application written in python that limits accessible websites specified by the client.</p>
-                </div>
+            <a href="https://github.com/MichelleDomagala-Tang/Web-Blocker">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading" style="background-color:rgb(190, 238, 255)">
+                        <span class="glyphicon glyphicon-user logo"></span>
+                        <h4><strong>WEB-BLOCKER</strong></h4>
+                    </div>
+            </a>
+            <div class="panel-body">
+                <p>An application written in python that limits accessible websites specified by the client.</p>
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="panel panel-default text-center">
-                <a href="https://devpost.com/software/mac-pump-portal-j2ycn3"><div class="panel-heading" style="background-color:rgb(190, 238, 255)" >
+    </div>
+    <div class="col-sm-4">
+        <div class="panel panel-default text-center">
+            <a href="https://devpost.com/software/mac-pump-portal-j2ycn3">
+                <div class="panel-heading" style="background-color:rgb(190, 238, 255)">
                     <span class="glyphicon glyphicon-heart logo"></span>
                     <h4><strong>MACPUMP PORTAL</strong></h4>
-                </div></a>
-                <div class="panel-body">
-                    <p>A website developed to increase patient-doctor communication. </p>
                 </div>
+            </a>
+            <div class="panel-body">
+                <p>A website developed to increase patient-doctor communication. </p>
             </div>
         </div>
-        <div class="col-sm-4">
-            <div class="panel panel-default text-center">
-                <a href="https://www.linkedin.com/in/michelle-domagala-tang/"><div class="panel-heading" style="background-color:rgb(190, 238, 255)">
+    </div>
+    <div class="col-sm-4">
+        <div class="panel panel-default text-center">
+            <a href="https://www.linkedin.com/in/michelle-domagala-tang/">
+                <div class="panel-heading" style="background-color:rgb(190, 238, 255)">
                     <span class="glyphicon glyphicon-wrench logo"></span>
                     <h4><strong>SUMOBOTS</strong></h4>
-                </div></a>
-                <div class="panel-body">
-                    <p>Developed software and chassis of sumo-fighting robot using Adrino and AutoDesk Inventor.</p>
                 </div>
+            </a>
+            <div class="panel-body">
+                <p>Developed software and chassis of sumo-fighting robot using Adrino and AutoDesk Inventor.</p>
             </div>
         </div>
     </div>
-    <hr>
+</div>
+<hr>
+<br>
 
-    <div class="container-fluid text-center" id="skills">
-        <h2 style="font-family: Playfair; font-size:40px" >Skills</h2><br>
-        <p data-aos="fade-up"> Proficient in Python and HTML, with experience in Javascript. </p>
-        <br>
+<!-- Skills -->
+<div class="container-fluid text-center" id="skills">
+    <h2 style="font-family: Playfair; font-size:40px">Skills</h2>
+    <br>
+    <p>A few technical and soft skills</p>
+    <div class="container-fluid" data-aos="fade-up">
+        <div class="row">
+            <div class="col-sm-4">
+                <h4 style="text-align: left; font-family:Trebuchet; ">PYTHON</h4>
+                <div class="progress" style=" height: 35%;">
+                    <div class="progress-bar progress-bar-skills" role="progressbar" aria-valuenow="40"
+                        aria-valuemin="0" aria-valuemax="100" style="width: 80%; ">Very Good</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h4 style="text-align: left; font-family:Trebuchet;">HTML & CSS</h4>
+                <div class="progress" style=" height: 35%;">
+                    <div class="progress-bar progress-bar-skills" role="progressbar" aria-valuenow="40"
+                        aria-valuemin="0" aria-valuemax="100" style="width: 60%;">Experienced</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h4 style="text-align: left; font-family:Trebuchet;">WEB DESIGN</h4>
+                <div class="progress" style=" height: 35%;">
+                    <div class="progress-bar progress-bar-skills" role="progressbar" aria-valuenow="40"
+                        aria-valuemin="0" aria-valuemax="100" style="width: 60%">Experienced</div>
+                </div>
+            </div>
+
+            <div class="container" data-aos="fade-up" style="margin-top:5%;">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h4 style="text-align: left; font-family:Trebuchet;">COMMUNICATION</h4>
+                        <div class="progress" style=" height: 35%;">
+                            <div class="progress-bar progress-bar-skills" role="progressbar" aria-valuenow="40"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 100%;">Excellent</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4 style="text-align: left; font-family:Trebuchet;">TEAMWORK</h4>
+                        <div class="progress" style=" height: 35%;">
+                            <div class="progress-bar progress-bar-skills" role="progressbar" aria-valuenow="40"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 100%; ">Excellent</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4 style="text-align: left; font-family:Trebuchet;">ORGANIZED</h4>
+                        <div class="progress" style=" height: 35%;">
+                            <div class="progress-bar progress-bar-skills" role="progressbar" aria-valuenow="40"
+                                aria-valuemin="0" aria-valuemax="100" style="width: 100%;">Excellent</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
         <hr>
     </div>
+</div>
 
-    <footer class="container-fluid text-center" >
-        <a href="#top" title="To Top">
-            <span class="glyphicon glyphicon-chevron-up"></span>
-        </a>
-        <p>Return to Top</p>
-        <br>
-        <h2 class="text-center" id="contact">CONTACT</h2>
-        <br>
-        <p style="font-size:15px"><span class="glyphicon glyphicon-map-marker" ></span> Toronto, Canada</p>
-        <p style="font-size:15px"><span class="glyphicon glyphicon-envelope"></span> domagalm@mcmaster.ca</p>
-    </footer>
+<!-- Footer and Contact -->
+<footer class="container-fluid text-center">
+    <a href="#top" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>Return to Top</p>
+    <br>
+    <h2 class="text-center" id="contact">CONTACT</h2>
+    <br>
+    <p style="font-size:15px"><span class="glyphicon glyphicon-map-marker"></span> Toronto, Canada</p>
+    <p style="font-size:15px"><span class="glyphicon glyphicon-envelope"></span> domagalm@mcmaster.ca</p>
+</footer>
 
-
-
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
