@@ -73,7 +73,7 @@
 <script>
     $(document).ready(function () {
         //Smooth scrolling to all links in navbar
-        $(".navbar a).on('click',function(event){
+        $(".navbar a).on('click', function(event){
             if (this.hash !== "") {
                 event.preventDefault();
                 var hash = this.hash;
@@ -86,8 +86,8 @@
                 });
             }
 
-        })
-    })
+        });
+    });
 </script>
 
 <!--- Navigation bar -->
@@ -109,7 +109,7 @@
             </li>
             <li class="nav-item">
                 <a class="glyphicon glyphicon-pencil" style="font-size: 150%;color:rgb(0,119,181); margin-right:10px;"
-                    href="https://drive.google.com/file/d/1wWEjD3qGukvnd1y4aKnrgeSI6VDB37bs/view?usp=sharing"
+                    href="https://drive.google.com/file/d/141s22Vxwf6VXm9uchqjpSwblMysRUPUi/view?usp=sharing"
                     target="_blank">Resume
                 </a>
             </li>
@@ -146,7 +146,7 @@
             Domagala-Tang</h1>
         <h4 style="font-size:25px">An engineering student passionate about new technology and entrepreneurship </h4>
         <br>
-        <img class="responsive rounded" src=images/Michelle.1.jpg alt="">
+        <div class="d-none d-lg-block"><img class="responsive rounded" src=images/Michelle.1.jpg alt=""></div>
     </div>
 </div>
 
@@ -158,6 +158,16 @@
     <p data-aos="fade-up">In my free time I enjoy reading, video games, and building projects! </p>
     <br>
     <hr>
+</div>
+
+<!-- Job Experience -->
+<div class="container-fluid text-center" id="jobs">
+    <h2 style="font-family: Playfair; font-size:40px; padding-bottom: 15px;">Job Experience<br>
+        <h3 data-aos="fade-up" data-aos-duration="1000">Software Developer at BMO</h3>
+        <p data-aos="fade-up" data-aos-duration="1000">Worked on an Agile Development team in Channels Technology during the Summer of 2020. Helped maintain and improve the BMO Personal Banking Application and the internal Admin Portal. </p> 
+        <p data-aos="fade-up" data-aos-duration="1000">Technologies Used: Angular, TypeScript, HTML, JavaScript, CSS, Git</p>
+        <br>
+        <hr>
 </div>
 
 <!--Projects-->
@@ -211,21 +221,11 @@
 <hr>
 <br>
 
-<!-- Job Experience -->
-<div class="container-fluid text-center" id="jobs">
-    <h2 style="font-family: Playfair; font-size:40px; padding-bottom: 15px;">Job Experience<br>
-        <h3 data-aos="fade-up" data-aos-duration="1000">Software Developer at BMO</h3>
-        <p data-aos="fade-up" data-aos-duration="1000">Currently working in Channels Technology at BMO for Summer 2020.
-        </p>
-        <br>
-        <hr>
-</div>
-
 <!-- Skills -->
 <div class="container-fluid text-center" id="skills">
     <h2 style="font-family: Playfair; font-size:40px">Skills</h2>
     <br>
-    <p>A few technical and soft skills</p>
+    <p>My top technical and soft skills. On top of those, I also have excellent leadership skills and experience with JavaScript/TypeScript.</p>
     <div class="container-fluid" data-aos="fade-up">
         <div class="row">
             <div class="col-sm-4">
@@ -236,7 +236,7 @@
                 </div>
             </div>
             <div class="col-sm-4">
-                <h4 style="text-align: left; font-family:Trebuchet;">C PROGRAMMING</h4>
+                <h4 style="text-align: left; font-family:Trebuchet;">JAVA</h4>
                 <div class="progress" style=" height: 35%;">
                     <div class="progress-bar progress-bar-skills" role="progressbar" aria-valuenow="40"
                         aria-valuemin="0" aria-valuemax="100" style="width: 80%;">Very Good</div>
@@ -267,7 +267,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <h4 style="text-align: left; font-family:Trebuchet;">ORGANIZED</h4>
+                        <h4 style="text-align: left; font-family:Trebuchet;">ORGANIZATION</h4>
                         <div class="progress" style=" height: 35%;">
                             <div class="progress-bar progress-bar-skills" role="progressbar" aria-valuenow="40"
                                 aria-valuemin="0" aria-valuemax="100" style="width: 100%;">Excellent</div>
@@ -285,10 +285,11 @@
 <div class="container-fluid text-center">
     <h2 style="font-family: Playfair; font-size:40px" id="clubs">Clubs and Teams</h2>
     <br>
-    <p>My most memorable event and club moments </p>
+    <p>Univeristy is a time to find out what you're passionate about, and I found my passions through clubs and teams. I've been a part of DeltaHacks, Women in Eningeering, Software Engineering Society, and Intramural Sports!</p>
+    <p class="d-none d-lg-block">Below are some of my most memorable moments.</p>
     <br>
 
-    <div style="padding-bottom: 5%;">
+    <div style="padding-bottom: 5%;" class="d-none d-lg-block">
         <div id="club_carousel" class="carousel slide carousel-fade jumbotron" data-ride="carousel" data-aos="fade-up"
             data-aos-duration="2000">
 
